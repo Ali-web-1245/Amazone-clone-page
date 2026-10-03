@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Deals - AmaZone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <div class="top-header">
+      <a href="./index.html" class="brand-logo">Ama<span>Zone</span></a>
+      <div class="header-actions">
+        <a href="./cart.html" class="nav-option cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="sub-nav">
+      <div class="sub-nav-links">
+        <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="./deals.html" class="active"><i class="fa-solid fa-tag"></i> Today's Deals</a>
+        <a href="./shop.html"><i class="fa-solid fa-bag-shopping"></i> Shop All</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" style="margin-top: 30px;">
+    <div class="countdown-box">
+      <i class="fa-solid fa-clock" style="font-size: 1.5rem; color: #cc0c39;"></i>
+      <div>
+        <h3>Flash Deals End In:</h3>
+        <p style="font-size: 0.85rem; color: var(--muted);">Limited time discounts updated daily.</p>
+      </div>
+      <div class="timer" id="deal-timer">05 : 42 : 18</div>
+    </div>
+
+    <div class="section-title">
+      <h2>All Promotional Deals</h2>
+    </div>
+
+    <div class="card-grid" id="all-deals-container">
+      <!-- Rendered by JS -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="back-to-top" onclick="scrollToTop()">↑ Back to top</div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AmaZone. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

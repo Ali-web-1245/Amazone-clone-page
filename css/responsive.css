@@ -1,0 +1,115 @@
+/* ==========================================
+   Amazone - Responsive Stylesheet
+   ========================================== */
+
+@media (max-width: 1024px) {
+  .card-grid, .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .hero-slider {
+    height: 350px;
+  }
+
+  .slide-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .shop-layout {
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-header {
+    flex-wrap: wrap;
+  }
+
+  .search-container {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 8px;
+  }
+
+  .location-btn, .nav-option {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .card-grid, .grid-4, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-slider {
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .slide-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    display: none;
+  }
+
+  .product-detail-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .promo-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid, .grid-4, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-slider {
+    height: 250px;
+  }
+
+  .slide-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .slide-content p {
+    font-size: 0.85rem;
+  }
+  
+  .brand-logo {
+    font-size: 1.4rem;
+  }
+}

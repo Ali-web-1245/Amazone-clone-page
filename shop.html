@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Products - Amazone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header>
+    <div class="top-header">
+      <div class="logo-container">
+        <a href="./index.html" class="brand-logo">Ama<span>Zone</span></a>
+      </div>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search AmaZone products...">
+        <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="header-actions">
+        <a href="./cart.html" class="nav-option cart-link">
+          <div class="cart-icon-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge">0</span>
+          </div>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+    <nav class="sub-nav">
+      <button class="mobile-toggle"><i class="fa-solid fa-bars"></i> All</button>
+      <div class="sub-nav-links">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="deals.html"><i class="fa-solid fa-tag"></i> Today's Deals</a>
+        <a href="shop.html" class="active"><i class="fa-solid fa-bag-shopping"></i> Shop All</a>
+        <a href="categories.html"><i class="fa-solid fa-list"></i> Categories</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="overlay"></div>
+  <aside class="mobile-sidebar">
+    <div class="sidebar-header">
+      <span>Menu</span>
+      <button class="sidebar-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="sidebar-menu">
+      <a href="./index.html">Home</a>
+      <a href="./shop.html">Shop All</a>
+      <a href="./deals.html">Deals</a>
+      <a href="./categories.html">Categories</a>
+    </div>
+  </aside>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="./index.html">Home</a> &gt; <span>Shop</span></div>
+      <h1>Explore Our Products</h1>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="shop-layout">
+      <!-- SIDEBAR FILTERS -->
+      <aside class="filters-sidebar">
+        <div class="filter-group">
+          <h4>Category</h4>
+          <ul class="filter-list">
+            <li><label><input type="radio" name="cat" value="All" class="cat-filter" checked> All Categories</label></li>
+            <li><label><input type="radio" name="cat" value="Electronics" class="cat-filter"> Electronics</label></li>
+            <li><label><input type="radio" name="cat" value="Fashion" class="cat-filter"> Fashion</label></li>
+            <li><label><input type="radio" name="cat" value="Home" class="cat-filter"> Home & Kitchen</label></li>
+            <li><label><input type="radio" name="cat" value="Beauty" class="cat-filter"> Beauty</label></li>
+            <li><label><input type="radio" name="cat" value="Sports" class="cat-filter"> Sports</label></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- PRODUCT GRID & SORTING -->
+      <section>
+        <div class="sort-bar">
+          <span>Showing products</span>
+          <div>
+            <label>Sort By: </label>
+            <select id="sort-select">
+              <option value="featured">Featured</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+              <option value="rating">Avg. Customer Rating</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card-grid grid-3" id="shop-products-container">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="back-to-top" onclick="scrollToTop()">↑ Back to top</div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AmaZone. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

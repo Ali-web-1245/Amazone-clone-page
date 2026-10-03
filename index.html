@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmaZone - Online Shopping for Electronics, Apparel, Home & More</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->./
+  <header>
+    <div class="top-header">
+      <div class="logo-container">
+        <a href="./index.html" class="brand-logo">Ama<span>Zone</span></a>
+        <div class="location-btn">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="location-text">
+            <span>Deliver to</span>
+            <span>Select Location</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <select class="search-category-select">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Home</option>
+        </select>
+        <input type="text" class="search-input" placeholder="Search AmaZone products...">
+        <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="header-actions">
+        <a href="./about.html" class="nav-option">
+          <span>Hello, User</span>
+          <span>Account & Lists</span>
+        </a>
+        <a href="./deals.html" class="nav-option">
+          <span>Returns</span>
+          <span>& Orders</span>
+        </a>
+        <a href="./cart.html" class="nav-option cart-link">
+          <div class="cart-icon-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge">0</span>
+          </div>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="sub-nav">
+      <button class="mobile-toggle"><i class="fa-solid fa-bars"></i> All</button>
+      <div class="sub-nav-links">
+        <a href="./index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="./deals.html"><i class="fa-solid fa-tag"></i> Today's Deals</a>
+        <a href="./shop.html"><i class="fa-solid fa-bag-shopping"></i> Shop All</a>
+        <a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a>
+        <a href="./about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE SIDEBAR -->
+  <div class="overlay"></div>
+  <aside class="mobile-sidebar">
+    <div class="sidebar-header">
+      <span><i class="fa-solid fa-user"></i> Hello, Sign In</span>
+      <button class="sidebar-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="sidebar-menu">
+      <h4>Trending</h4>
+      <a href="./deals.html"><i class="fa-solid fa-fire"></i> Today's Deals</a>
+      <a href="./shop.html"><i class="fa-solid fa-star"></i> Best Sellers</a>
+      <h4>Shop By Category</h4>
+      <a href="./shop.html?category=Electronics"><i class="fa-solid fa-plug"></i> Electronics</a>
+      <a href="./shop.html?category=Fashion"><i class="fa-solid fa-shirt"></i> Fashion</a>
+      <a href="./shop.html?category=Home"><i class="fa-solid fa-couch"></i> Home & Kitchen</a>
+      <a href="./categories.html"><i class="fa-solid fa-border-all"></i> All Categories</a>
+      <h4>Help & Settings</h4>
+      <a href="./about.html"><i class="fa-solid fa-circle-info"></i> Customer Service</a>
+    </div>
+  </aside>
+
+  <!-- HERO SLIDER -->
+  <section class="hero-slider">
+    <div class="slide active" style="background-image: linear-gradient(to right, rgba(19,25,33,0.9), rgba(19,25,33,0.2)), url('https://picsum.photos/1400/500?random=100');">
+      <div class="slide-content">
+        <span class="slide-badge">Electronics Sale</span>
+        <h2>Next-Gen Audio & Smart Tech</h2>
+        <p>Save up to 40% on premium wireless headphones and wearables.</p>
+        <a href="./shop.html" class="btn">Shop Now</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: linear-gradient(to right, rgba(19,25,33,0.9), rgba(19,25,33,0.2)), url('https://picsum.photos/1400/500?random=101');">
+      <div class="slide-content">
+        <span class="slide-badge">Fashion Collection</span>
+        <h2>Upgrade Your Everyday Style</h2>
+        <p>Discover new arrivals in denim, footwear, and apparel accessories.</p>
+        <a href="./shop.html" class="btn">Explore Style</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: linear-gradient(to right, rgba(19,25,33,0.9), rgba(19,25,33,0.2)), url('https://picsum.photos/1400/500?random=102');">
+      <div class="slide-content">
+        <span class="slide-badge">Home & Kitchen</span>
+        <h2>Modern Cooking Comforts</h2>
+        <p>Premium espresso machines, cookware, and smart home appliances.</p>
+        <a href="./shop.html" class="btn">Shop Kitchen</a>
+      </div>
+    </div>
+    <button class="slider-btn prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slider-btn next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="slider-dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    
+    <!-- CATEGORY SECTION -->
+    <section style="margin-top: 20px;">
+      <div class="section-title">
+        <h2>Shop by Category</h2>
+        <a href="./categories.html">See all categories</a>
+      </div>
+      <div class="card-grid">
+        <div class="category-card">
+          <h3>Electronics</h3>
+          <div class="img-box"><img src="https://picsum.photos/400/300?random=30" alt="Electronics" loading="lazy"></div>
+          <a href="./shop.html?category=Electronics" class="link-btn">Explore Now →</a>
+        </div>
+        <div class="category-card">
+          <h3>Fashion</h3>
+          <div class="img-box"><img src="https://picsum.photos/400/300?random=31" alt="Fashion" loading="lazy"></div>
+          <a href="./shop.html?category=Fashion" class="link-btn">Explore Now →</a>
+        </div>
+        <div class="category-card">
+          <h3>Home & Kitchen</h3>
+          <div class="img-box"><img src="https://picsum.photos/400/300?random=32" alt="Home" loading="lazy"></div>
+          <a href="./shop.html?category=Home" class="link-btn">Explore Now →</a>
+        </div>
+        <div class="category-card">
+          <h3>Beauty & Fitness</h3>
+          <div class="img-box"><img src="https://picsum.photos/400/300?random=33" alt="Beauty" loading="lazy"></div>
+          <a href="./shop.html?category=Beauty" class="link-btn">Explore Now →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODAY'S DEALS -->
+    <section style="margin-top: 40px;">
+      <div class="section-title">
+        <h2>Today's Best Deals</h2>
+        <a href="./deals.html">View all deals</a>
+      </div>
+      <div class="card-grid" id="deals-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section class="promo-banner">
+      <div class="promo-text">
+        <h2>Upgrade Your Everyday Shopping</h2>
+        <p>Join millions of happy customers. Enjoy ultra-fast shipping and easy returns.</p>
+        <a href="./shop.html" class="btn">Explore Products</a>
+      </div>
+      <i class="fa-solid fa-truck-fast" style="font-size: 5rem; color: var(--accent);"></i>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section>
+      <div class="section-title">
+        <h2>Featured Products</h2>
+        <a href="./shop.html">Shop all products</a>
+      </div>
+      <div class="c./ard-grid" id="featured-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+      ↑ Back to top
+    </div>
+    <div class="container footer-links">
+      <div class="footer-column">
+        <h3>Get to Know Us</h3>
+        <ul>
+          <li><a href="./about.html">About AmaZone</a></li>
+          <li><a href="./about.html">Our Story</a></li>
+          <li><a href="./about.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Make Money With Us</h3>
+        <ul>
+          <li><a href="./shop.html">Sell Products</a></li>
+          <li><a href="./about.html">Affiliate Program</a></li>
+          <li><a href="./about.html">Advertise Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="./about.html">Help Center</a></li>
+          <li><a href="./cart.html">Returns & Shipping</a></li>
+          <li><a href="./about.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Shop With Us</h3>
+        <ul>
+          <li><a href="./deals.html">Today's Deals</a></li>
+          <li><a href="./categories.html">Categories</a></li>
+          <li><a href="./shop.html">New Arrivals</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AmaZone. All Rights Reserved. | Designed for Frontend Demonstration</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
